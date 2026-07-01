@@ -1,0 +1,21 @@
+{
+  "name": "qa-automation-project",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript E2E automation demo project using POM, fixtures, reporters, and CI.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "test:e2e:chromium": "playwright test --project=chromium",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
+    "typescript": "^6.0.3"
+  }
+}
